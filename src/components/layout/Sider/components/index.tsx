@@ -21,8 +21,8 @@ const _renderLinkItem = (props: any) => {
       {/* <div className={`${loading ? "hidden" : "block"}`}> */}
       <li
         onClick={() => handleNavigate(props._url)}
-        className={`relative flex items-center mb-[10px] py-3 focus:bg-[#50FFFF0D] ${
-          props.siderWidth < 250 ? "justify-center w-[40px]" : "px-5 w-full"
+        className={`relative flex items-center py-3 focus:bg-[#50FFFF0D] ${
+          props.siderWidth < 1600 ? "justify-center" : "px-5 w-full"
         } text-white hover:border-[#F7F9FC] hover:bg-[#50FFFF0D] cursor-pointer text-sm rounded-[10px] font-ttfirs ${
           props._url === "/home" && props._url === props.pathname
             ? "bg-[#50FFFF0D] border-none"
@@ -33,7 +33,7 @@ const _renderLinkItem = (props: any) => {
       >
         {props._url === "/home" && props._url === props.pathname ? (
           <div
-            className={`${props.siderWidth > 250 ? `mr-[15px]` : ""} w-[20px]`}
+            className={`${props.siderWidth > 1600 ? `mr-[15px]` : ""} w-[20px]`}
           >
             <Image
               src={props._clickedIcon}
@@ -45,7 +45,7 @@ const _renderLinkItem = (props: any) => {
           </div>
         ) : props._url !== "/home" && props.pathname.includes(props._url) ? (
           <div
-            className={`${props.siderWidth > 250 ? `mr-[15px]` : ""} w-[20px]`}
+            className={`${props.siderWidth > 1600 ? `mr-[15px]` : ""} w-[20px]`}
           >
             <Image
               src={props._clickedIcon}
@@ -58,7 +58,7 @@ const _renderLinkItem = (props: any) => {
           </div>
         ) : (
           <div
-            className={`${props.siderWidth > 250 ? `mr-[15px]` : ""} w-[18px]`}
+            className={`${props.siderWidth > 1600 ? `mr-[15px]` : ""} w-[18px]`}
           >
             <Image
               src={props._icon}
@@ -69,35 +69,9 @@ const _renderLinkItem = (props: any) => {
             />
           </div>
         )}
-        {props.siderWidth > 250 ? (
+        {props.siderWidth > 1600 ? (
           <>
             {props._name}
-            {props._url === "/home" && props._url === props.pathname ? (
-              <>
-                <div className="absolute right-[20px] w-[8px]">
-                  <Image
-                    src="/icon/active.svg"
-                    height={0}
-                    width={0}
-                    alt=""
-                    className="w-[8px] h-auto"
-                  />
-                </div>
-              </>
-            ) : props._url !== "/home" &&
-              props.pathname.includes(props._url) ? (
-              <div className="absolute right-[20px] w-[8px]">
-                <Image
-                  src="/icon/active.svg"
-                  height={0}
-                  width={0}
-                  className="w-[8px] h-auto"
-                  alt=""
-                />
-              </div>
-            ) : (
-              <></>
-            )}
           </>
         ) : null}
       </li>

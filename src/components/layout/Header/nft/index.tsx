@@ -1,8 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+
+import SiderList from "../../Sider/sider";
+
 const NFTHeader = () => {
+  const pathname = usePathname();
+  const [loading, setLoading] = useState<boolean>(true);
+  const [siderWidth, setSiderWidth] = useState<number>(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSiderWidth(window.innerWidth);
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])
   return (
     <div className="w-full flex items-end">
+      {loading && (
+        <div className="w-full aspect-square bg-[#121212] rounded-[10px]"></div>
+      )}
+      <Image
+        src="/chicken/logo.png"
+        width={50}
+        height={0}
+        alt=""
+        className="rounded-full"
+        priority={true}
+        onLoad={() => setLoading(false)}
+      />
+      { siderWidth > 500 &&
+      <Image
+        src="/home/title.png"
+        width={350}
+        height={0}
+        className="ml-2 mt-3"
+        alt="title"
+      />}
+
+      <SiderList pathname={pathname} siderWidth={siderWidth} />
       <div className="w-[354px] inline-flex items-center mt-[40px]">
         <div className="relative">
           <Image
@@ -17,23 +55,7 @@ const NFTHeader = () => {
             placeholder="Search NFT"
           />
         </div>
-        <button className="flex items-center justify-center bg-[#53FAFB] rounded-[10px] w-[43px] ml-[10px] h-[43px]">
-          <Image
-            src="/icon/browse.svg"
-            width={0}
-            height={0}
-            className="w-[20px] h-auto"
-            alt=""
-          />
-        </button>
       </div>
-      <Image
-        src="/home/title.png"
-        width={600}
-        height={0}
-        className="mb-2 ml-5"
-        alt="title"
-      />
     </div>
   );
 };
