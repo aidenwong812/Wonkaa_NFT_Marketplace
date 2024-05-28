@@ -73,8 +73,8 @@ const Marketplace = () => {
 
   return (
     <>
-      <div className="w-full h-full bg-[#121212]">
-        <div className="w-full h-full bg-[#121212] flex flex-col px-[50px]">
+      <div className="w-full h-full ">
+        <div className="w-full h-full  flex flex-col px-[50px]">
           <p className="text-[20px] mt-[20px]">My NFTs</p>
 
           <div className="w-full h-full mt-[30px] mb-[30px] relative">

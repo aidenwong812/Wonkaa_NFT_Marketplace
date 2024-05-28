@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <div
-        className={`w-full h-[100px] bg-[#121212] border-t-[1px] border-t-[#2A2A2A] mobile:px-[50px] px-[20px] flex items-center flex-none`}
+        className={`w-full h-[100px]  border-t-[1px] border-t-[#2A2A2A] mobile:px-[50px] px-[20px] flex items-center flex-none`}
       >
         <div className="flex items-center w-full overflow-auto h-full relative">
           <div className="flex items-center justify-between w-full min-w-[705px] absolute">
