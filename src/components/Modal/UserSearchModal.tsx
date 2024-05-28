@@ -83,7 +83,7 @@ const UserSearchModal = () => {
                 </button>
               ) : null}
             </div>
-            <div className="w-full inline-flex justify-between mt-[20px] items-end">
+            <div className="w-full inline-flex justify-between mt-[20px] items-center">
               <p>Results</p>
               <p className="text-[13px] text-[#53FAFB]">Clear All</p>
             </div>

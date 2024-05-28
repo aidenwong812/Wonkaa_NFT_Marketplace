@@ -13,6 +13,14 @@ const SiderList = (props: any) => {
   return (
     <ul className="flex text-[#D4D4D4] text-md mt-[10px] overflow-auto w-full mx-5 gap-2 my-0">
       <ListComponent
+        _name="Golden Ticket in place of Marketplace"
+        _icon="/icon/home_white.svg"
+        _clickedIcon="/icon/home_blue.svg"
+        _url="/golden-ticket"
+        pathname={props.pathname}
+        siderWidth={props.siderWidth}
+      />
+      <ListComponent
         _name="Marketplace"
         _icon="/icon/marketplace.svg"
         _clickedIcon="/icon/marketplace_blue.svg"
