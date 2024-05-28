@@ -21,9 +21,8 @@ const _renderLinkItem = (props: any) => {
       {/* <div className={`${loading ? "hidden" : "block"}`}> */}
       <li
         onClick={() => handleNavigate(props._url)}
-        className={`relative flex items-center py-3 focus:bg-[#50FFFF0D] ${
-          props.siderWidth < 1600 ? "justify-center" : "px-5 w-full"
-        } hover:text-[#53FAFB] hover:border-[#F7F9FC] hover:bg-[#50FFFF0D] cursor-pointer text-sm rounded-[10px] font-ttfirs ${
+        className={`relative flex items-center py-3 focus:bg-[#50FFFF0D] justify-center
+         hover:text-[#53FAFB] hover:border-[#F7F9FC] hover:bg-[#50FFFF0D] cursor-pointer text-sm rounded-[10px] font-ttfirs ${
           props._url === "/home" && props._url === props.pathname
             ? "bg-[#50FFFF0D] text-[#53FAFB] border-none px-5"
             : props._url !== "/home" && props.pathname.includes(props._url)
