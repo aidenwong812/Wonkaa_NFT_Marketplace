@@ -64,7 +64,6 @@ export default function RootLayout({
             theme="light"
           />
           <WalletProvider>
-            <Sider />
             <div className="flex-col flex w-full h-full">
               <Header />
               {children}
