@@ -28,8 +28,12 @@ const Sider = () => {
   };
 
   const handleClick = () => {
+    
     if (!connStatus) {
       solanaConnect();
+      console.log("connected", connStatus);
+    } else {
+      console.log("Not connected", connStatus);
     }
   };
 
@@ -136,7 +140,7 @@ const Sider = () => {
               } text-left`}
             >
               {loading && (
-                <div className="w-full aspect-square bg-[#121212] rounded-[10px]"></div>
+                <div className="w-full aspect-square  rounded-[10px]"></div>
               )}
               <Image
                 src="/chicken/logo.png"
@@ -152,7 +156,7 @@ const Sider = () => {
 
           <SiderList pathname={pathname} siderWidth={siderWidth} />
 
-          <div className="mb-[40px]">
+          <div className="mb-[40px] ">
             <ul className="text-white text-md">
               <div className="w-full inline-flex items-center justify-center">
                 <button

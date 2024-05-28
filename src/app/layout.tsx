@@ -4,8 +4,8 @@ import dynamic from "next/dynamic";
 import SiderLoader from "@/components/layout/Sider/loading";
 import { ToastContainer } from "react-toastify";
 export const metadata: Metadata = {
-  title: "SOFT COQ INU",
-  description: "SOFT COQ INU",
+  title: "Wonkaa",
+  description: "Wonkaa",
 };
 import "./globals.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -34,7 +34,9 @@ const NftBuyConfirmModal = dynamic(
   () => import("@/components/Modal/NftBuyConfirmModal")
 );
 const NftListModal = dynamic(() => import("@/components/Modal/NftListModal"));
-const NftUnListModal = dynamic(() => import("@/components/Modal/NftUnListModal"));
+const NftUnListModal = dynamic(
+  () => import("@/components/Modal/NftUnListModal")
+);
 const NftTransferModal = dynamic(
   () => import("@/components/Modal/NftTransferModal")
 );
@@ -49,7 +51,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-ttfirs bg-cover bg-center bg-[url('/community/bg.svg')] -z-10 bg-[#121212] fixed left-0 right-0 top-0 bottom-0 flex flex-row">
+      <body
+        className="font-ttfirs bg-cover h-screen  bg-opacity-50 -z-10 fixed left-0 right-0 top-0 bottom-0 flex flex-row"
+      >
+        <div className="w-full h-full absolute left-0 top-0 bg-[url('/home/background.jpeg')] -z-20 opacity-30 bg-cover"></div>
         <SettingModalProvider>
           <ToastContainer
             position="top-right"

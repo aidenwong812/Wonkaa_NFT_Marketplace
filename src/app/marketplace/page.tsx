@@ -44,7 +44,7 @@ const Page = () => {
 
   return (
     <>
-      <div className="w-full h-full bg-[#121212] mobile:px-[50px] px-[20px] pt-[30px] pb-[50px] overflow-auto prevent-select">
+      <div className="w-full h-full  mobile:px-[50px] px-[20px] pt-[30px] pb-[50px] overflow-auto prevent-select">
         <div className="w-full h-full relative overflow-auto flex flex-col gap-[20px]">
           <p className="text-[25px]">Explore NFTs</p>
           <div className="w-full h-full mt-[20px] relative overflow-auto">

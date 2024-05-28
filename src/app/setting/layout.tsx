@@ -11,7 +11,7 @@ const Layout = ({
 }>) => {
   return (
     <>
-      <div className="fixed right-0 left-0 top-0 bottom-0 bg-[#121212] flex flex-row">
+      <div className="fixed right-0 left-0 top-0 bottom-0  flex flex-row">
         <Sider />
         <div className="w-full h-full flex flex-col">
             <Header/>

@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Instruction() {
   return (
     <div className="w-full h-full relative overflow-auto">
-      <div className="w-full flex flex-col px-[50px] bg-[#121212] overflow-auto absolute h-full">
+      <div className="w-full flex flex-col px-[50px]  overflow-auto absolute h-full">
         <div className="w-full flex justify-center">
           <div className="mt-[30px] w-full inline-flex justify-between items-center mb-[30px]">
             <p className="text-[25px]">Wallet / Instruction</p>

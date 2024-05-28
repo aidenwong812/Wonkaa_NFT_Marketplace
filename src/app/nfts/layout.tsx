@@ -7,7 +7,7 @@ const Layout = ({
 }>) => {
   return (
     <>
-      <div className="w-full h-full bg-[#121212] flex flex-col">{children}</div>
+      <div className="w-full h-full  flex flex-col">{children}</div>
     </>
   );
 };

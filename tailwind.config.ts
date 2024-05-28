@@ -16,6 +16,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      backgroundOpacity: {
+        '50': '0.5',
+      },
       fontFamily: {
         sans: ["var(--font-poppins)"],
         metana: "Metana",

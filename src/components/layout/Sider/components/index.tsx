@@ -15,7 +15,7 @@ const _renderLinkItem = (props: any) => {
         <div
           className={`relative mb-[10px] py-3 ${
             props.siderWidth < 250 ? "justify-center w-[40px]" : "px-5 w-full"
-          } rounded-[10px] bg-[#121212] animate-pulse`}
+          } rounded-[10px]  animate-pulse`}
         ></div>
       )} */}
       {/* <div className={`${loading ? "hidden" : "block"}`}> */}
