@@ -5,7 +5,7 @@ const MarketplaceHeader = () => {
   const [loading1, setLoading1] = useState<boolean>(true);
 
   return (
-    <div className="w-full flex items-end">
+    <div className="w-full flex items-center">
       <div className="w-[358px] inline-flex mt-[40px]">
         {loading1 && (
           <div className="bg-[#252525] animate-pulse rounded-[10px] w-[43px] aspect-square mr-[10px]"></div>

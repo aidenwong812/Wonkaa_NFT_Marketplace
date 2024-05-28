@@ -30,7 +30,7 @@ const NFTHeader = () => {
   }, []);
 
   return (
-    <div className="w-full flex items-end">
+    <div className="w-full flex items-center">
       {loading && (
         <div className="w-full aspect-square  rounded-[10px]"></div>
       )}

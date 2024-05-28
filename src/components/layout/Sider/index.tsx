@@ -126,11 +126,11 @@ const Sider = () => {
             className="w-[40px] h-auto scale-x-[-1]"
           />
         </button>
-        <div className="w-[80%] flex flex-col h-full">
+        <div className="w-[80%] flex flex-col justify-center items-center h-full">
           <div
             className={`mt-[65px]  ${
               siderWidth >= 250
-                ? "inline-flex ml-[20px] mb-[30px]"
+                ? "inline-flex justify-center ml-[20px] mb-[30px]"
                 : `flex justify-center mb-[40px]`
             }`}
           >

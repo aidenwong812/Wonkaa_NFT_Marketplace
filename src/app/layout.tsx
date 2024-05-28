@@ -54,7 +54,7 @@ export default function RootLayout({
       <body
         className="font-ttfirs bg-cover h-screen  bg-opacity-50 -z-10 fixed left-0 right-0 top-0 bottom-0 flex flex-row"
       >
-        <div className="w-full h-full absolute left-0 top-0 bg-[url('/home/background.jpeg')] -z-20 opacity-30 bg-cover"></div>
+        <div className="w-full h-full absolute left-0 top-0 bg-[url('/home/background.jpeg')] -z-20 bg-cover"></div>
         <SettingModalProvider>
           <ToastContainer
             position="top-right"
