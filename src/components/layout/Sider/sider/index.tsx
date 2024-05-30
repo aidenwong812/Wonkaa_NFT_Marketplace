@@ -11,7 +11,7 @@ const SiderList = (props: any) => {
   const { walletID } = useWallet();
 
   return (
-    <ul className="flex text-[#D4D4D4] text-md mt-[10px] overflow-auto w-full mx-5 gap-2 my-0">
+    <ul className="flex text-[#D4D4D4] text-md mt-[10px] overflow-auto mx-auto gap-2 my-0">
       <ListComponent
         _name="Golden Ticket in place of Marketplace"
         _icon="/icon/home_white.svg"
