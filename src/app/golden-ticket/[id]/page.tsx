@@ -86,11 +86,11 @@ const NFT = ({ params: { id } }) => {
                         width={0}
                         height={0}
                         alt=""
-                        src={"/avatar/21.png"}
+                        src={"/home/logo.jpeg"}
                         className="w-[45px] h-auto rounded-[8px]"
                       />
                       <div className="ml-[20px] text-left">
-                        <p className="py-auto">SOFT COQ INU</p>
+                        <p className="py-auto">Wonkaa</p>
                       </div>
                     </button>
                   </div>
