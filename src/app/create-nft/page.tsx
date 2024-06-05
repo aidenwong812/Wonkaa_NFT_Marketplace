@@ -131,11 +131,11 @@ const NFT = () => {
                         width={0}
                         height={0}
                         alt=""
-                        src={"/avatar/21.png"}
+                        src={"/home/logo.jpeg"}
                         className="w-[45px] h-auto rounded-[8px]"
                       />
                       <div className="ml-[20px] text-left">
-                        <p>SOFT COQ INU</p>
+                        <p>Wonkaa</p>
                       </div>
                     </button>
                   </div>

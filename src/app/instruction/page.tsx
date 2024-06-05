@@ -313,7 +313,7 @@ export default function Instruction() {
                         href="/nfts"
                         className="text-[#53FAFB] text-xl mb-5 hover:underline"
                       >
-                        Welcome to SOFT COQ NFT MARKETPLACE!
+                        Welcome to Wonkaa NFT MARKETPLACE!
                       </Link>
                       <br />
                       Your Phantom wallet is ready to use. You can get started
@@ -330,33 +330,6 @@ export default function Instruction() {
                           className="mx-auto"
                         />
                       </b>
-                    </div>
-                    <div className="text-center">
-                      <p>
-                        <strong>
-                          If you are having trouble, we can help you in the{" "}
-                          <Link
-                            href="https://t.me/softcoqinu1"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-[#53FAFB] hover:underline"
-                          >
-                            telegram channel
-                          </Link>
-                        </strong>
-                        <strong>&nbsp;</strong>
-                      </p>
-                      <div>
-                        <strong>What is telegram?&nbsp;</strong>Telegram is a
-                        free voice, video, and text chat app that's used by tens
-                        of millions of people ages 13+ to&nbsp;
-                        <b>
-                          talk and hang out with their communities and friends
-                        </b>
-                        . People use Telegram daily to talk about many things,
-                        ranging from art projects and family trips to homework
-                        and mental health support.
-                      </div>
                     </div>
                     <div className="text-center">
                       <strong></strong>
