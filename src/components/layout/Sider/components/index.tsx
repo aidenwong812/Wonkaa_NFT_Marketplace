@@ -12,13 +12,13 @@ const _renderLinkItem = (props: any) => {
   return (
     <li
       onClick={() => handleNavigate(props._url)}
-      className={`relative flex items-center py-3 focus:bg-gradient-to-r focus:from-red-500 focus:via-green-500 focus:to-yellow-500 justify-center text-[#F7F3E9]
+      className={`relative flex items-center py-3 focus:bg-gradient-to-r focus:from-red-500 focus:via-green-500 focus:to-yellow-500 justify-center text-[#FFDD44]
          hover:text-[#FFDD44] hover:bg-[#6A1B9A] cursor-pointer text-sm font-semibold rounded-[10px] font-ttfirs ${
            props._url === "/home" && props._url === props.pathname
              ? "bg-[#6A1B9A] border-none px-5"
              : props._url !== "/home" && props.pathname.includes(props._url)
              ? "bg-[#6A1B9A] border-none px-5"
-             : "text-[#F7F3E9] px-5"
+             : "text-[#FFDD44] px-5"
          }`}
     >
       <div>{props._name}</div>
